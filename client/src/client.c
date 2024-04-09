@@ -100,14 +100,14 @@ void leer_consola(t_log* logger)
 			add_history(leido);
 		}
 
-		if (!strcmp(linea, "exit", 4))
+		if (!strcmp(leido,"exit"))
 		{
 			free(leido);
 			break;
 		}
 		
-		printf("%s\n", linea);
-        free(linea);
+		printf("%s\n", leido);
+        free(leido);
 
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 
